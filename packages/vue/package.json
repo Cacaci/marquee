@@ -1,0 +1,11 @@
+{
+  "name": "@joycostudio/marquee-vue",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "dependencies": {
+    "@joycostudio/marquee": "workspace:*"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}

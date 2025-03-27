@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --base-viewport: 480;
+  --base-size: 16;
+  --dynamic-base-size: calc(var(--base-size) / var(--base-viewport) * 100vw);
+}
+
+@screen sm {
+  :root {
+    --base-viewport: 768;
+  }
+}
+
+@screen md {
+  :root {
+    --base-viewport: 1024;
+  }
+}
+
+@screen lg {
+  :root {
+    --base-viewport: 1920;
+  }
+}
+
+@screen 3xl {
+  :root {
+    --base-viewport: 2525;
+  }
+}
+
+html,
+body {
+  font-size: var(--dynamic-base-size);
+  overscroll-behavior: none;
+  color-scheme: dark;
+
+  @apply bg-background;
+}
